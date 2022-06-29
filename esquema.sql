@@ -40,3 +40,32 @@ CREATE TABLE aula_assistida(
     CONSTRAINT ck_avaliacao CHECK (avaliacao BETWEEN -1 AND 1)
 );
 
+CREATE TABLE comentario (
+    conteudo TEXT,
+    data_de_criacao TIMESTAMP,
+    data_de_edicao TIMESTAMP,
+    username VARCHAR(20) NOT NULL,
+    CONSTRAINT pk_comentario PRIMARY KEY (username, data_de_criacao),
+    CONSTRAINT fk_comentario_aula FOREIGN KEY username REFERENCES user(username)
+);
+
+CREATE TABLE material_de_apoio (
+    "url" VARCHAR(200),
+    titulo VARCHAR(50),
+    tamanho INTEGER,
+    aula_id INTEGER NOT NULL,
+    CONSTRAINT pk_material_de_apoio PRIMARY KEY ("url", aula_id),
+    CONSTRAINT fk_material_de_apoio_aula FOREIGN KEY aula_id REFERENCES aula(id),
+    CONSTRAINT ck_material_de_apoio_tamanho CHECK (tamanho > 0)
+);
+
+CREATE TABLE mensagem (
+    username VARCHAR(20) NOT NULL,
+    discussao_id INTEGER NOT NULL,
+    data_msg TIMESTAMP,
+    conteudo TEXT,
+    CONSTRAINT pk_mensagem PRIMARY KEY (usuario, discussao_id, data_msg),
+    CONSTRAINT fk_mensagem_usario FOREIGN KEY usuario REFERENCES usuario(username),
+    CONSTRAINT fk_mensagem_discussao FOREIGN KEY discussao REFERENCES discussao(id)
+);
+
