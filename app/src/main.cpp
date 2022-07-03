@@ -123,18 +123,19 @@ int main(){
 		pqxx::connection c("host=localhost port=5432 dbname=possanitube user=admin password=admin connect_timeout=10");
 
 		do{
-			std::cout << "\n+---------------+\n"
-						"|  Possanitube  |\n"
-						"+---------------+\n\n"
+			std::cout <<
+				"\n+---------------+\n"
+				"|  Possanitube  |\n"
+				"+---------------+\n\n"
 
-						"Menu:\n\n"
+				"Menu:\n\n"
 
-						"1) Inserir Aluno\n"
-						"2) Listar Professores\n"
-						"3) Buscar Aula por Professor\n"
-						"4) Sair\n"
+				"1) Inserir Aluno\n"
+				"2) Listar Professores\n"
+				"3) Buscar Aula por Professor\n"
+				"4) Sair\n"
 
-						"\nDigite sua escolha: ";
+				"\nDigite sua escolha: ";
 
 			// Checks for valid input
 			if (!(std::cin >> choice)) {
