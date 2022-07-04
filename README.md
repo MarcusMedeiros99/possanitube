@@ -10,4 +10,4 @@ Na pasta `app`:
 
 Para realizar build, execute `make`.
 
-Para executar o o app, execute `make run`.
+Para executar o app, execute `make run`.
