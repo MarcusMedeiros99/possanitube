@@ -43,13 +43,13 @@ VALUES ('grings123', 'Equação da Reta', '2011-10-10', 65, 'Apresentação da e
 -- Criação de aulas assistidas:
 
 INSERT INTO aula_assistida
-VALUES ('joao22', 1, 1, 1);
+VALUES ('joao22', 1, 4, 1);
 
 INSERT INTO aula_assistida
 VALUES ('joao22', 2, 1, -1);
 
 INSERT INTO aula_assistida
-VALUES ('maria33', 3, 1, 0);
+VALUES ('maria33', 3, 2, 0);
 
 
 -- Criação de comentários:
