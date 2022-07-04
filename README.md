@@ -1,3 +1,5 @@
+# Possanitube CLI
+
 ## Requisitos
 
 Para realizar build, é necessário possuir as bibliotecas libpq (inclusa com PostgreSQL) e libpqxx.
