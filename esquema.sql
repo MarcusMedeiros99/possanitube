@@ -23,9 +23,6 @@ CREATE TABLE aula (
     data_de_criacao TIMESTAMP NOT NULL,
     duracao INTEGER,
     descricao VARCHAR (100),
-    n_views INTEGER,
-    likes INTEGER,
-    dislikes INTEGER,
     disciplina VARCHAR (10) NOT NULL,
 
     CONSTRAINT pk_aula PRIMARY KEY (id),

@@ -30,14 +30,14 @@ VALUES ('GA', 'Geometria Analítica', 'Vetores, retas, planos, cônicas e quádr
 
 -- Criação de aulas: 
 
-INSERT INTO aula (professor, titulo, data_de_criacao, duracao, descricao, n_views, likes, dislikes, disciplina)
-VALUES ('possani', 'Limites Laterais', '2011-10-10', 65, 'Definição de limites laterais', 0, 0, 0, 'CALC1');
+INSERT INTO aula (professor, titulo, data_de_criacao, duracao, descricao, disciplina)
+VALUES ('possani', 'Limites Laterais', '2011-10-10', 65, 'Definição de limites laterais', 'CALC1');
 
-INSERT INTO aula (professor, titulo, data_de_criacao, duracao, descricao, n_views, likes, dislikes, disciplina)
-VALUES ('possani', 'Teorema de Stokes', '2012-02-11', 47, 'Revisão do teorema de Stokes', 0, 0, 0, 'CALC3');
+INSERT INTO aula (professor, titulo, data_de_criacao, duracao, descricao, disciplina)
+VALUES ('possani', 'Teorema de Stokes', '2012-02-11', 47, 'Revisão do teorema de Stokes', 'CALC3');
 
-INSERT INTO aula (professor, titulo, data_de_criacao, duracao, descricao, n_views, likes, dislikes, disciplina)
-VALUES ('grings123', 'Equação da Reta', '2011-10-10', 65, 'Apresentação da equação da reta', 0, 0, 0, 'GA');
+INSERT INTO aula (professor, titulo, data_de_criacao, duracao, descricao, disciplina)
+VALUES ('grings123', 'Equação da Reta', '2011-10-10', 65, 'Apresentação da equação da reta', 'GA');
 
 
 -- Criação de aulas assistidas:
