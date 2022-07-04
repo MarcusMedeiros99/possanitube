@@ -76,13 +76,22 @@ INSERT INTO discussao (aula, usuario, data_criacao, titulo, descricao)
 VALUES (2, 'joao22', '2022-01-02', 'Utilidades do Teorema de Stokes', 'Exemplos de aplicações em que usarei Stokes quando me formar');
 
 INSERT INTO discussao (aula, usuario, data_criacao, titulo, descricao)
-VALUES (2, 'maria33', '2022-04-06', 'Exercício proposto 3', 'Resolução do exercício proposto em aula');
+VALUES (3, 'maria33', '2022-04-06', 'Exercício proposto 3', 'Resolução do exercício proposto em aula');
+
+INSERT INTO discussao (aula, usuario, data_criacao, titulo, descricao)
+VALUES (1, 'joao22', '2022-05-01', 'Ajuda com o exercício 2', 'Alguem pode me ajudar a resolver esse exercicio?');
 
 
 -- Criação de mensagens para discussões:
 
 INSERT INTO mensagem
 VALUES ('maria33', 1, '2022-01-03', 'Será útil pelo raciocínio lógico');
+
+INSERT INTO mensagem
+VALUES ('joao22', 1, '2022-01-03 00:10:00', 'Algo mais?');
+
+INSERT INTO mensagem
+VALUES ('maria33', 1, '2022-01-03 00:20:00', 'Melhor esperar uma resposta do professor.');
 
 INSERT INTO mensagem
 VALUES ('grings123', 2, '2022-04-06', 'Sim, Maria. Seu raciocínio está correto');
